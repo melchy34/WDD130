@@ -1,0 +1,243 @@
+/* Define color variables */
+:root {
+    --primary-color: #0099cc; /* Blue for primary actions */
+    --secondary-color: #ff6600; /* Orange for accents */
+    --background-color: #f4f4f4; /* Light grey for background */
+    --text-color: #333; /* Dark grey for text */
+    --footer-bg: #222; /* Dark background for footer */
+  }
+  
+  /* General styling for body */
+  body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  /* Styling for the header */
+  .site-header {
+    background-color: var(--primary-color);
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .site-header .logo img {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Logontakes minimal space, nav takes remaining space */
+    align-items: center; /* Vertically center items */
+    padding: 1rem 1rem;
+    background-color: #0066cc; /* Rafting Adventure blue */
+    color: white;
+  }
+  
+  .nav {
+    display: flex; /* Flexbox for horizontal nav layout */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav ul li a {
+  margin-left: 20;
+}
+
+  .main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .main-nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+  }
+  
+  .main-nav a:hover {
+    color: var(--secondary-color);
+  }
+  
+  /* Hero Section */
+  .hero {
+    position: relative;
+    background-color: #333;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .hero-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Rock Salt', Arial;
+    font-size: 2em;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Styling for the About Article */
+  .about-us img {
+    display: block;
+    margin: auto;
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .about-us p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: black;
+    background-color: white;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  /* Contact Page Specific Styles */
+.form-container {
+  width: 80%;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+/* Employee Profile Styles */
+.employee-profiles {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.profile {
+  text-align: center;
+  flex: 1;
+}
+
+.profile img {
+  width: 200px;
+  height: 120px;
+  border-image: 50%;
+  margin-bottom: 10px;
+}
+
+.company-info {
+  width: 20%;
+  margin-left: var(--primary-color);
+  padding: 10px;
+  background-color: brown;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+/* Form Styles */
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: #555;
+}
+
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.radio-group {
+  display: flex;
+  gap: 15px;
+}
+
+.checkbox-group {
+  margin-top: 10px;
+}
+
+.submit-btn {
+  width: 20%;
+  padding: 12px;
+  position: relative;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}
+
+/* Footer Section */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #0066cc;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+  /* Footer Styling */
+  .site-footer {
+    background-color: var(--footer-bg);
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .site-footer .social-media a {
+    margin: 0 10px;
+  }
+  
+  .site-footer .social-media img {
+    width: 30px;
+    height: auto;
+    transition: opacity 0.3s;
+  }
+  
+  .site-footer .social-media a:hover img {
+    opacity: 0.7;
+  }
+  
+  /* Remove underlines from social media links */
+  .site-footer .social-media a {
+    text-decoration: none;
+  }
+  
