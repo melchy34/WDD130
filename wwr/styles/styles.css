@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+nav {
+  background-color: darkblue;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  display: inline-block;  /* changed from block to inline-block */
+  padding: 20px;
+  text-decoration: none;  /* ensures no underline on links */
+}
+
+h1 {
+  text-align: center;
+  color: darkblue;
+}
+
+img {
+  width: 150px;
+  height: auto;
+  border: 1px solid black;
+  padding: 2px;
+  box-shadow: 0 0 30px gray;
+}
+
+main img {
+  margin: 0 0 1rem 1rem;
+  float: right;
+}
+
+p {
+  margin: 1rem;
+  padding: 10px;
+  text-align: center;
+}
+
+main {
+  max-width: 840px;  /* added px unit */
+}
+
+aside {
+  width: 20rem;
+  margin: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.2); /* adjusted rgba syntax */
+  padding: 1rem;
+  background-color: #eee;
+  color: #333;
+  text-align: center;
+  position: relative;
+}
+
+aside img {
+  width: 200px;
+  height: auto;
+}
+
+aside h2 {
+  position: absolute;
+  top: 47px;
+  left: 150px;
+}
+
+footer {
+  margin-top: 30px;  /* increased top margin for more space */
+  border-top: 1px solid #463434;
+  text-align: center;
+}
+
+/* Class Selectors */
+.box {
+  margin: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  background-color: #b4adad;
+  color: #000;
+}
+
+.indent {
+  padding-left: 2rem;
+}

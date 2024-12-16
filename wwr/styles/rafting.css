@@ -26,9 +26,7 @@
   }
   
   .site-header .logo img {
-    display: grid;
-    grid-template-columns: auto 1fr; /* Logontakes minimal space, nav takes remaining space */
-    align-items: center; /* Vertically center items */
+    align-items: left; /* Vertically left items */
     padding: 1rem 1rem;
     background-color: #0066cc; /* Rafting Adventure blue */
     color: white;
@@ -87,7 +85,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-family: 'Rock Salt', Arial;
+    font-family: 'Rock Salt', cursive;
     font-size: 2em;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
   }
@@ -112,95 +110,317 @@
     text-align: center;
   }
   
-  /* Contact Page Specific Styles */
-.form-container {
-  width: 80%;
-  margin: 30px auto;
-  padding: 20px;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
+  /* History Section */
+.history {
+  padding: 2rem;
+  background-color: #fff;
   text-align: center;
-  color: #333;
-}
-
-/* Employee Profile Styles */
-.employee-profiles {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 30px;
-}
-
-.profile {
-  text-align: center;
-  flex: 1;
-}
-
-.profile img {
-  width: 200px;
-  height: 120px;
-  border-image: 50%;
-  margin-bottom: 10px;
-}
-
-.company-info {
-  width: 20%;
-  margin-left: var(--primary-color);
-  padding: 10px;
-  background-color: brown;
+  margin: 20px auto;
+  max-width: 900px;
   border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-/* Form Styles */
-.form-group {
-  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-label {
-  display: block;
-  font-weight: bold;
-  color: #555;
+.history h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #0066cc;
 }
 
-input[type="text"], input[type="email"], textarea {
-  width: 100%;
-  padding: 10px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
+.history p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+  
+  /* Adventures Section */
+.adventure {
+  padding: 3rem 2rem;
+  background-color: #e0f7fa;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-textarea {
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header Styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.site-header logo {
+  width: 150px;
+  margin-left: 10px; /* Adds space between logo and left edge */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #ff9900;
+}
+
+/* Main Content Styles */
+main {
+  padding: 40px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+/* Call to Action Button */
+.cta-button {
+  display: inline-block;
+  background-color: #ff9900;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.cta-button:hover {
+  background-color: #cc7a00;
+}
+
+/* Trip List Section Styles */
+.trips-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.trip {
+  background-color: #fff;
+  padding: 20px;
+  width: 30%;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.trip img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.trip h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.trip ul {
+  list-style: none;
+  padding: 0;
+}
+
+.trip ul li {
+  font-size: 1.1em;
+  margin: 5px 0;
+}
+
+/* Trip Table Styles */
+.trip-table {
+  margin-top: 40px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th, table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+table th {
+  background-color: #333;
+  color: #fff;
+}
+
+table td a {
+  color: #ff9900;
+  text-decoration: none;
+}
+
+table td a:hover {
+  color: #cc7a00;
+}
+
+/* Contact Info */
+.company-info {
+  background-color: #e1c4e7;
+  padding: 10px;
+  margin: 00px 0;
+  border-radius: 10px;
+}
+
+.company-info h4 {
+  margin-bottom: 15px;
+}
+
+.company-info address {
+  font-style: normal;
+}
+
+/* Contact Form */
+.form-container {
+  background-color: #c7bfbf;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  margin: 30px auto;
+}
+
+.form-container .form-group {
+  margin-bottom: 20px;
+}
+
+.form-container label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #704646;
+  box-sizing: border-box;
+}
+
+.form-container input[type="radio"] {
+  width: auto;
+}
+
+.form-container textarea {
   resize: vertical;
 }
 
-.radio-group {
-  display: flex;
-  gap: 15px;
+.form-container .radio-group label {
+  margin-right: 20px;
 }
 
-.checkbox-group {
+.form-container .checkbox-group {
   margin-top: 10px;
 }
 
-.submit-btn {
-  width: 20%;
-  padding: 12px;
-  position: relative;
-  background-color: #4CAF50;
-  color: white;
+.form-container button {
+  background-color: #003366;
+  color: rgb(240, 236, 236);
+  padding: 12px 20px;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
+  font-weight: bold;
   cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s;
 }
 
-.submit-btn:hover {
-  background-color: #45a049;
+.form-container button:hover {
+  background-color: #415f7c;
+}
+
+/* Google Map Embed */
+.map iframe {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  border: 50;
+  border-radius: 10px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+/* Create a grid layout for the adventure images */
+.rafting-images {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 100px 200px auto 5fr; /* 5 equal columns */
+  gap: 20px; /* Space between the images */
+  max-width: 600px;
+  margin: 0 auto; /* Center the grid */
+}
+
+/* Style for each figure containing the image and caption */
+.adventure-list figure {
+  margin: 0;
+  overflow: hidden; /* Ensures images don't overflow the figure */
+  border-radius: 8px; /* Rounded corners for each image */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+/* Style for images */
+.adventure-list img {
+  width: 100%; /* Makes sure the images fill the figure */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  transition: transform 0.3s ease-in-out; /* Smooth scaling on hover */
+}
+
+/* Hover effect for images */
+.adventure-list img:hover {
+  transform: scale(1.05); /* Zoom-in effect */
+}
+
+/* Style for the captions */
+.adventure-list figcaption {
+  padding: 10px;
+  background-color: #0066cc; /* Match header color */
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 
 /* Footer Section */
